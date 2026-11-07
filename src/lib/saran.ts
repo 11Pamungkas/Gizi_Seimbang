@@ -2,8 +2,8 @@ import type { ImageSourcePropType } from 'react-native';
 
 // Saran makanan umum yang mudah ditemukan di Indonesia.
 // Belum ada angka gizi di sini. Nilai per bahan akan memakai data TKPI resmi.
-// Untuk memakai foto asli: taruh file di assets/makanan/ lalu isi `foto`, contoh:
-//   foto: require('@/assets/makanan/nasi-merah.jpg')
+// Foto ada di assets/makanan/. Nama file harus sama persis (termasuk huruf besar dan spasi).
+// Emoji dipakai sebagai cadangan kalau `foto` tidak diisi.
 export interface Makanan {
   nama: string;
   emoji: string;
@@ -26,12 +26,12 @@ export const KELOMPOK: Kelompok[] = [
     warna: '#B7791F',
     bg: '#FBF0D5',
     item: [
-      { nama: 'Nasi merah', emoji: '🍚', catatan: 'Lebih banyak serat, kenyang lebih lama' },
-      { nama: 'Nasi putih', emoji: '🍙', catatan: 'Atur porsinya sesuai target' },
-      { nama: 'Ubi jalar', emoji: '🍠', catatan: 'Rebus atau kukus, bukan digoreng' },
-      { nama: 'Singkong rebus', emoji: '🥔', catatan: 'Imbangi dengan lauk protein' },
-      { nama: 'Jagung rebus', emoji: '🌽', catatan: 'Camilan sehat dan mengenyangkan' },
-      { nama: 'Oatmeal', emoji: '🥣', catatan: 'Cocok untuk sarapan' },
+      { nama: 'Nasi merah', emoji: '🍚', catatan: 'Lebih banyak serat, kenyang lebih lama', foto: require('../../assets/makanan/Nasi Merah.jpg') },
+      { nama: 'Nasi putih', emoji: '🍙', catatan: 'Atur porsinya sesuai target', foto: require('../../assets/makanan/Nasi Putih.jpg') },
+      { nama: 'Ubi jalar', emoji: '🍠', catatan: 'Rebus atau kukus, bukan digoreng', foto: require('../../assets/makanan/Ubi Jalar.jpg') },
+      { nama: 'Singkong rebus', emoji: '🥔', catatan: 'Imbangi dengan lauk protein', foto: require('../../assets/makanan/Singkong Rebus.jpg') },
+      { nama: 'Jagung rebus', emoji: '🌽', catatan: 'Camilan sehat dan mengenyangkan', foto: require('../../assets/makanan/Jagung rebus.jpg') },
+      { nama: 'Oatmeal', emoji: '🥣', catatan: 'Cocok untuk sarapan', foto: require('../../assets/makanan/Oatmeal.jpg') },
     ],
   },
   {
@@ -40,14 +40,14 @@ export const KELOMPOK: Kelompok[] = [
     warna: '#D9694B',
     bg: '#F9E2DA',
     item: [
-      { nama: 'Telur', emoji: '🥚', catatan: 'Rebus atau dadar dengan sedikit minyak' },
-      { nama: 'Dada ayam', emoji: '🍗', catatan: 'Panggang atau rebus, tanpa kulit' },
-      { nama: 'Ikan (kembung, nila, tongkol)', emoji: '🐟', catatan: 'Pepes, bakar, atau kukus' },
-      { nama: 'Tempe', emoji: '🫘', catatan: 'Bakar atau tumis, kurangi goreng' },
-      { nama: 'Tahu', emoji: '⬜', catatan: 'Kukus, panggang, atau dalam sup' },
-      { nama: 'Udang', emoji: '🦐', catatan: 'Rebus atau tumis ringan' },
-      { nama: 'Daging sapi tanpa lemak', emoji: '🥩', catatan: 'Masak tanpa santan' },
-      { nama: 'Susu atau yoghurt', emoji: '🥛', catatan: 'Pilih yang tanpa tambahan gula' },
+      { nama: 'Telur', emoji: '🥚', catatan: 'Rebus atau dadar dengan sedikit minyak', foto: require('../../assets/makanan/Telur.jpg') },
+      { nama: 'Dada ayam', emoji: '🍗', catatan: 'Panggang atau rebus, tanpa kulit', foto: require('../../assets/makanan/Dada Ayam.jpg') },
+      { nama: 'Ikan (kembung, nila, tongkol)', emoji: '🐟', catatan: 'Pepes, bakar, atau kukus', foto: require('../../assets/makanan/Ikan.jpg') },
+      { nama: 'Tempe', emoji: '🫘', catatan: 'Bakar atau tumis, kurangi goreng', foto: require('../../assets/makanan/Tempe.jpg') },
+      { nama: 'Tahu', emoji: '⬜', catatan: 'Kukus, panggang, atau dalam sup', foto: require('../../assets/makanan/Tahu.jpg') },
+      { nama: 'Udang', emoji: '🦐', catatan: 'Rebus atau tumis ringan', foto: require('../../assets/makanan/Udang.jpg') },
+      { nama: 'Daging sapi tanpa lemak', emoji: '🥩', catatan: 'Masak tanpa santan', foto: require('../../assets/makanan/Daging sapi.jpg') },
+      { nama: 'Susu atau yoghurt', emoji: '🥛', catatan: 'Pilih yang tanpa tambahan gula', foto: require('../../assets/makanan/Sussu.jpg') },
     ],
   },
   {
@@ -56,14 +56,14 @@ export const KELOMPOK: Kelompok[] = [
     warna: '#1F4D3A',
     bg: '#DDE8DC',
     item: [
-      { nama: 'Bayam', emoji: '🥬', catatan: 'Sayur bening atau tumis ringan' },
-      { nama: 'Kangkung', emoji: '🌿', catatan: 'Tumis dengan sedikit minyak' },
-      { nama: 'Buncis', emoji: '🫛', catatan: 'Rebus atau tumis' },
-      { nama: 'Wortel', emoji: '🥕', catatan: 'Mentah, rebus, atau dalam sup' },
-      { nama: 'Tomat dan lalapan', emoji: '🍅', catatan: 'Segar bersama lauk' },
-      { nama: 'Pepaya', emoji: '🍈', catatan: 'Penutup makan yang ringan' },
-      { nama: 'Pisang', emoji: '🍌', catatan: 'Camilan praktis' },
-      { nama: 'Jeruk', emoji: '🍊', catatan: 'Buah segar, bukan jus bergula' },
+      { nama: 'Bayam', emoji: '🥬', catatan: 'Sayur bening atau tumis ringan', foto: require('../../assets/makanan/bayam.jpg') },
+      { nama: 'Kangkung', emoji: '🌿', catatan: 'Tumis dengan sedikit minyak', foto: require('../../assets/makanan/kangkung.jpg') },
+      { nama: 'Buncis', emoji: '🫛', catatan: 'Rebus atau tumis', foto: require('../../assets/makanan/buncis.jpg') },
+      { nama: 'Wortel', emoji: '🥕', catatan: 'Mentah, rebus, atau dalam sup', foto: require('../../assets/makanan/wortel.jpg') },
+      { nama: 'Tomat dan lalapan', emoji: '🍅', catatan: 'Segar bersama lauk', foto: require('../../assets/makanan/tomat.jpg') },
+      { nama: 'Pepaya', emoji: '🍈', catatan: 'Penutup makan yang ringan', foto: require('../../assets/makanan/pepaya.jpg') },
+      { nama: 'Pisang', emoji: '🍌', catatan: 'Camilan praktis', foto: require('../../assets/makanan/pisang.jpg') },
+      { nama: 'Jeruk', emoji: '🍊', catatan: 'Buah segar, bukan jus bergula', foto: require('../../assets/makanan/jeruk.jpg') },
     ],
   },
 ];

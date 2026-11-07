@@ -1,4 +1,5 @@
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image } from 'expo-image';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { KELOMPOK, MENU, type Makanan } from '@/lib/saran';
 import { BAYANG, K, R } from '@/lib/warna';
@@ -8,7 +9,7 @@ const HURUF = ['A', 'B', 'C'];
 function Kartu({ m, lebar }: { m: Makanan; lebar: boolean }) {
   return (
     <View style={[s.kartu, { width: lebar ? 200 : 164 }]}>
-      {m.foto ? <Image source={m.foto} style={s.foto} resizeMode="cover" /> : (
+      {m.foto ? <Image source={m.foto} style={s.foto} contentFit="cover" /> : (
         <View style={[s.foto, s.fotoKosong]}>
           <Text style={s.emoji}>{m.emoji}</Text>
         </View>
