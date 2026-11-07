@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="512" height="512">
+  <title>Gizi Seimbang</title>
+  <rect width="200" height="200" rx="44" fill="#1B6B3A"/>
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <path d="M98 52 C58 86 60 128 98 150 Z" fill="#FFFFFF"/>
+  <path d="M102 52 C142 86 140 128 102 150 Z" fill="#BFE3CB"/>
+  <path d="M100 150 L100 170" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>

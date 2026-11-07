@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="800" height="240">
+  <title>Gizi Seimbang</title>
+  <g transform="translate(12 12) scale(0.48)">
+    <circle cx="100" cy="100" r="96" fill="#1B6B3A"/>
+    <circle cx="100" cy="100" r="80" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <path d="M98 52 C58 86 60 128 98 150 Z" fill="#FFFFFF"/>
+    <path d="M102 52 C142 86 140 128 102 150 Z" fill="#BFE3CB"/>
+    <path d="M100 150 L100 170" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+  <text x="124" y="58" font-family="Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#1B6B3A">Gizi</text>
+  <text x="124" y="98" font-family="Helvetica, Arial, sans-serif" font-size="38" font-weight="400" fill="#4C9A62">Seimbang</text>
+</svg>
